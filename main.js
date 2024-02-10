@@ -35,7 +35,7 @@ submitButton.addEventListener("click", function() {
         id: isNewBook ? +new Date() : submitButton.value,
         title: title.value.trim(),
         author: author.value.trim(),
-        year: year.value,
+        year: parseInt(year.value),
         isComplete: isComplete.checked
     }
 
