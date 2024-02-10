@@ -32,7 +32,7 @@ submitButton.addEventListener("click", function() {
 
     const isNewBook = submitButton.value == ""
     const book = {
-        id: isNewBook ? Date() : submitButton.value,
+        id: isNewBook ? +new Date() : submitButton.value,
         title: title.value.trim(),
         author: author.value.trim(),
         year: year.value,
